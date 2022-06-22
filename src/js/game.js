@@ -13,13 +13,13 @@ function clickOnCell(event) {
   const kill = document.querySelector('.killed');
   const miss = document.querySelector('.missed');
 
-  if (miss.textContent <= 1) {
-    alert('Игра завершена!');
-  }
-
   if (event.target.classList.contains('goblin')) {
     kill.textContent = Number(kill.textContent) + 1;
   } else {
     miss.textContent = Number(miss.textContent) - 1;
+  }
+
+  if (miss.textContent < 1) {
+    alert('Игра завершена!');
   }
 }
