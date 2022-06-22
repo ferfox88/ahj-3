@@ -1,0 +1,37 @@
+body {
+    background-color: antiquewhite;
+}
+
+.board-title {
+  text-align: center;
+}
+
+
+h1 {
+    color: red;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+.container-cells {
+    cursor: url('../img/hammer.png'), auto;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.goblin {
+    background: url(../img/goblin.png);
+    background-size: cover;
+}
